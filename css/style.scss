@@ -6,8 +6,9 @@
 }
 body {
     font-family: 'Kumbh Sans', sans-serif; 
-    
-    
+}
+main {
+    padding: 0 2rem;
 }
 h2 {
     text-align: center;
@@ -41,8 +42,7 @@ h2 {
        align-items: center;
        transition: all 0.3s ease;
        position: absolute;
-       
-       
+    
     }
 
     &__item {
@@ -93,7 +93,7 @@ h2 {
         color: rgb(211, 70, 19);
     }
     &__profession {
-        margin-bottom: 0.5rem;
+        margin-bottom: 2rem;
     }
     
 
@@ -102,10 +102,11 @@ h2 {
     display: flex;
     list-style: none;
     justify-content: center;
-    margin-top: 2rem;
+    
 
     & li {
         margin-right: 0.5rem;
+        
     }
 
     & li a {
@@ -125,7 +126,7 @@ h2 {
 }
 /*About Me*/
 .about {
-    height: 100vh;
+    margin-bottom: 2rem;
     &__title {
         color: rgb(211, 70, 19);
         text-align: center;
@@ -149,16 +150,16 @@ h2 {
     }
 }
 /*Portfolio*/
-#portfolio {
-    height: 100vh;
+.portfolio {
+   margin-bottom: 2rem;
 }
 .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    
 }
 .card {
-    width: 320px;
+    width: 100%;
     border-radius: 1rem;
     margin: 0 0 2rem 0;
     padding: 10px;
@@ -188,20 +189,43 @@ h2 {
     }
 }
 /*Contact me*/
-#contactme {
-  
+.contactme {
+    margin-bottom: 2rem;
 }
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+
+  &__card {
+    width: 100%;
+    box-shadow: -20px 20px 20px rgba(0,0,0,0.3);
+    border-radius: 1rem;
+    padding: 10px 20px;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  &__icon {
+      color: rgb(211, 70, 19);
+  }
+}
+
 /*Footer*/
 footer {
-    background-color:rgb(230, 114, 72);
+    background-color:rgb(26, 25, 25);
     color: white;
-    margin-top: 2rem;
-    min-height: 80px;
-    text-align: center;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    text-align: center; 
+}
+.footer__desc {
+    margin-top: 1rem;
 }
 
 @media only screen and (min-width:768px) {
-    
+    main {
+        padding: 0 3rem;
+    }
     .nav {
        background-color: rgb(211, 70, 19);
        width: 100%;
@@ -254,14 +278,12 @@ footer {
         &__name {
             font-size: 2rem;
         }
-       
-       
     }
     .social {
         display: flex;
         justify-content: flex-start;
-
     }
+    
     /*About me*/
     .about {
         z-index: 2;
@@ -292,6 +314,11 @@ footer {
        width: 100%;
        margin: 0;
 
+    }
+    /*Contact me*/
+    .contact {
+        display: flex;
+        flex-direction: row;
     }
 }
 

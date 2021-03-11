@@ -10,6 +10,10 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
 }
 
+main {
+  padding: 0 2rem;
+}
+
 h2 {
   text-align: center;
   color: #d34613;
@@ -116,7 +120,7 @@ h2 {
 }
 
 .home__profession {
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .social {
@@ -127,7 +131,6 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 2rem;
 }
 
 .social li {
@@ -152,7 +155,7 @@ h2 {
 
 /*About Me*/
 .about {
-  height: 100vh;
+  margin-bottom: 2rem;
 }
 
 .about__title {
@@ -182,20 +185,22 @@ h2 {
 }
 
 /*Portfolio*/
-#portfolio {
-  height: 100vh;
+.portfolio {
+  margin-bottom: 2rem;
 }
 
 .container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .card {
-  width: 320px;
+  width: 100%;
   border-radius: 1rem;
   margin: 0 0 2rem 0;
   padding: 10px;
@@ -231,16 +236,52 @@ h2 {
 }
 
 /*Contact me*/
-/*Footer*/
-footer {
-  background-color: #e67248;
-  color: white;
-  margin-top: 2rem;
-  min-height: 80px;
+.contactme {
+  margin-bottom: 2rem;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1rem;
+}
+
+.contact__card {
+  width: 100%;
+  -webkit-box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  padding: 10px 20px;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
+.contact__icon {
+  color: #d34613;
+}
+
+/*Footer*/
+footer {
+  background-color: #1a1919;
+  color: white;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.footer__desc {
+  margin-top: 1rem;
+}
+
 @media only screen and (min-width: 768px) {
+  main {
+    padding: 0 3rem;
+  }
   .nav {
     background-color: #d34613;
     width: 100%;
@@ -347,6 +388,16 @@ footer {
   .card {
     width: 100%;
     margin: 0;
+  }
+  /*Contact me*/
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
