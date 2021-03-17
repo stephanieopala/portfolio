@@ -169,7 +169,7 @@ h2 {
     border-radius: 1rem;
     margin: 0 0 2rem 0;
     padding: 10px;
-    box-shadow: -20px 20px 20px rgba(0,0,0,0.3);
+    box-shadow: -10px 10px 20px rgba(0,0,0,0.3);
 
     &__image {
         width: 100%;
@@ -187,8 +187,8 @@ h2 {
         text-align: center;
         & a {
             background-color: rgb(211, 70, 19);
-            border: 1px solid rgb(211, 70, 19);
-            border-radius: 1rem;
+            border: none;
+            border-radius: 18px;
             padding: 10px 20px;
             
             color: white;
@@ -196,7 +196,7 @@ h2 {
             &:hover {
                 background-color: white;
                 color: rgb(211, 70, 19);
-                border: 1px solid rgb(211, 70, 19);
+                border: 2px solid rgb(211, 70, 19);
             }
         }
         
@@ -213,7 +213,7 @@ h2 {
 
   &__card {
     width: 100%;
-    box-shadow: -20px 20px 20px rgba(0,0,0,0.3);
+    box-shadow: -10px 10px 20px rgba(0,0,0,0.3);
     border-radius: 1rem;
     padding: 10px 20px;
     margin-bottom: 1rem;
@@ -329,9 +329,14 @@ footer {
 
     }
     /*Contact me*/
+    .contactme {
+        padding-top: 3rem;
+        min-height: 25vh;
+    }
     .contact {
         display: flex;
         flex-direction: row;
+        margin-top: 3rem;
     }
 }
 
@@ -339,7 +344,7 @@ footer {
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr ;
         grid-gap: 2rem;
         
     }

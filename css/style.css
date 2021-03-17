@@ -210,8 +210,8 @@ h2 {
   border-radius: 1rem;
   margin: 0 0 2rem 0;
   padding: 10px;
-  -webkit-box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.3);
-          box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .card__image {
@@ -235,8 +235,8 @@ h2 {
 
 .card__btn a {
   background-color: #d34613;
-  border: 1px solid #d34613;
-  border-radius: 1rem;
+  border: none;
+  border-radius: 18px;
   padding: 10px 20px;
   color: white;
   text-decoration: none;
@@ -245,7 +245,7 @@ h2 {
 .card__btn a:hover {
   background-color: white;
   color: #d34613;
-  border: 1px solid #d34613;
+  border: 2px solid #d34613;
 }
 
 /*Contact me*/
@@ -266,8 +266,8 @@ h2 {
 
 .contact__card {
   width: 100%;
-  -webkit-box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.3);
-          box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
   padding: 10px 20px;
   margin-bottom: 1rem;
@@ -398,6 +398,10 @@ footer {
     margin: 0;
   }
   /*Contact me*/
+  .contactme {
+    padding-top: 3rem;
+    min-height: 25vh;
+  }
   .contact {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -406,6 +410,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-top: 3rem;
   }
 }
 
@@ -415,8 +420,8 @@ footer {
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
     grid-gap: 2rem;
   }
 }
