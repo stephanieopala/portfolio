@@ -54,8 +54,6 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
   position: absolute;
 }
 
@@ -104,6 +102,10 @@ h2 {
 .home__img {
   background: #d34613;
   border: 6px solid #d34613;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
   border-radius: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -145,6 +147,8 @@ h2 {
   background-color: #d34613;
   font-size: 16px;
   color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .social li a:hover {
@@ -156,6 +160,8 @@ h2 {
 /*About Me*/
 .about {
   margin-bottom: 2rem;
+  font-size: 1.2rem;
+  
 }
 
 .about__title {
@@ -206,7 +212,7 @@ h2 {
 
 .card {
   width: 100%;
-  height: 460px;
+  height: auto;
   border-radius: 1rem;
   margin: 0 0 2rem 0;
   padding: 10px;
@@ -216,7 +222,7 @@ h2 {
 
 .card__image {
   width: 100%;
-  height: 60%;
+  height: auto;
   margin-bottom: 0.6rem;
 }
 
@@ -229,7 +235,7 @@ h2 {
 }
 
 .card__btn {
-  height: 10%;
+  height: 50px;
   text-align: center;
 }
 
@@ -240,6 +246,8 @@ h2 {
   padding: 10px 20px;
   color: white;
   text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .card__btn a:hover {

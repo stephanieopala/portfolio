@@ -40,7 +40,7 @@ h2 {
        flex-direction: column;
        justify-content: center;
        align-items: center;
-       transition: all 0.3s ease;
+       
        position: absolute;
     
     }
@@ -79,6 +79,8 @@ h2 {
     &__img {
         background: rgb(211, 70, 19);
         border: 6px solid rgb(211, 70, 19);
+        width: fit-content;
+        height: auto;
         border-radius: 50%;
         background-position: center;
         background-repeat:no-repeat;
@@ -117,6 +119,7 @@ h2 {
         background-color: rgb(211, 70, 19);
         font-size: 16px;
         color: white;
+        transition: all 0.3s ease;
        &:hover {
            background-color: white;
            color: rgb(211, 70, 19);
@@ -165,7 +168,7 @@ h2 {
 }
 .card {
     width: 100%;
-    height: 460px;
+    height: auto;
     border-radius: 1rem;
     margin: 0 0 2rem 0;
     padding: 10px;
@@ -173,7 +176,7 @@ h2 {
 
     &__image {
         width: 100%;
-        height: 60%;
+        height: auto;
         margin-bottom: 0.6rem;
     }
     &__title {
@@ -183,16 +186,16 @@ h2 {
         margin-bottom: 2rem;
     }
     &__btn {
-        height: 10%;
+        height: 50px;
         text-align: center;
         & a {
             background-color: rgb(211, 70, 19);
             border: none;
             border-radius: 18px;
             padding: 10px 20px;
-            
             color: white;
             text-decoration: none;
+            transition: all 0.3s ease;
             &:hover {
                 background-color: white;
                 color: rgb(211, 70, 19);
