@@ -8,7 +8,7 @@ body {
     font-family: 'Kumbh Sans', sans-serif; 
 }
 main {
-    padding: 0 2rem;
+    padding: 0;
 }
 h2 {
     text-align: center;
@@ -130,36 +130,51 @@ h2 {
 /*About Me*/
 .about {
     margin-bottom: 2rem;
+    background-color: rgb(211, 70, 19);
+    color: white;
+    padding: 1rem;
+    
+
     &__title {
-        color: rgb(211, 70, 19);
         text-align: center;
+        color: white;
+        margin-bottom: 1rem;
     }
     &__container {
         text-align: center;
+        font-size: 1.2rem;
+
     }
-    &__desc {
-        padding: 1rem;
-    }
+    
     &__skills {
-        padding: 1rem;
+        width: 100%;
         margin-top: 2rem;
         & h3 {
-            color: rgb(211, 70, 19);
+            color: white;
             margin-bottom: 1rem;
+            
         }
     }
     &__list {
         list-style: none;
-       
+        display: flex;
+        flex-wrap: wrap;
+        
+
     }
     &__item {
-        margin-bottom: 1rem;
-        
+        margin-left: 1.2rem;
+        margin-bottom: 1.2rem;
+        border: 1px solid white;
+        padding: 10px 5px;
+        width: fit-content;
+        font-weight: 600;
     }
 }
 /*Portfolio*/
 .portfolio {
    margin-bottom: 2rem;
+   padding: 0 1rem;
 }
 .container {
     display: flex;
@@ -208,6 +223,7 @@ h2 {
 /*Contact me*/
 .contactme {
     margin-bottom: 2rem;
+    padding: 0 1rem;
 }
 .contact {
   display: flex;
@@ -242,7 +258,7 @@ footer {
 @media only screen and (min-width:768px) {
     
     main {
-        padding: 0 4rem;
+        padding: 0;
     }
     
     .nav {
@@ -302,23 +318,25 @@ footer {
     
     /*About me*/
     .about {
-        
+        padding: 3rem;
         &__container {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            margin-top: 2rem;
-            
+          
         }
         &__desc {
             text-align: left;
         }
         &__skills {
             margin: 0;
-            text-align: left;
+            
         }
         
     }
     /*Portfolio*/
+    .portfolio {
+        padding: 3rem;
+    }
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -333,8 +351,9 @@ footer {
     }
     /*Contact me*/
     .contactme {
-        padding-top: 3rem;
+        
         min-height: 25vh;
+        padding: 3rem 3rem 0 3rem;
     }
     .contact {
         display: flex;

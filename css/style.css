@@ -11,7 +11,7 @@ body {
 }
 
 main {
-  padding: 0 2rem;
+  padding: 0;
 }
 
 h2 {
@@ -160,44 +160,56 @@ h2 {
 /*About Me*/
 .about {
   margin-bottom: 2rem;
-  font-size: 1.2rem;
-  
+  background-color: #d34613;
+  color: white;
+  padding: 1rem;
 }
 
 .about__title {
-  color: #d34613;
   text-align: center;
+  color: white;
+  margin-bottom: 1rem;
 }
 
 .about__container {
   text-align: center;
-}
-
-.about__desc {
-  padding: 1rem;
+  font-size: 1.2rem;
 }
 
 .about__skills {
-  padding: 1rem;
+  width: 100%;
   margin-top: 2rem;
 }
 
 .about__skills h3 {
-  color: #d34613;
+  color: white;
   margin-bottom: 1rem;
 }
 
 .about__list {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .about__item {
-  margin-bottom: 1rem;
+  margin-left: 1.2rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid white;
+  padding: 10px 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 600;
 }
 
 /*Portfolio*/
 .portfolio {
   margin-bottom: 2rem;
+  padding: 0 1rem;
 }
 
 .container {
@@ -259,6 +271,7 @@ h2 {
 /*Contact me*/
 .contactme {
   margin-bottom: 2rem;
+  padding: 0 1rem;
 }
 
 .contact {
@@ -301,7 +314,7 @@ footer {
 
 @media only screen and (min-width: 768px) {
   main {
-    padding: 0 4rem;
+    padding: 0;
   }
   .nav {
     background-color: #d34613;
@@ -377,21 +390,25 @@ footer {
             justify-content: flex-start;
   }
   /*About me*/
+  .about {
+    padding: 3rem;
+  }
   .about__container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    margin-top: 2rem;
   }
   .about__desc {
     text-align: left;
   }
   .about__skills {
     margin: 0;
-    text-align: left;
   }
   /*Portfolio*/
+  .portfolio {
+    padding: 3rem;
+  }
   .container {
     display: -ms-grid;
     display: grid;
@@ -407,8 +424,8 @@ footer {
   }
   /*Contact me*/
   .contactme {
-    padding-top: 3rem;
     min-height: 25vh;
+    padding: 3rem 3rem 0 3rem;
   }
   .contact {
     display: -webkit-box;
