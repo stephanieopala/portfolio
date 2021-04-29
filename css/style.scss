@@ -183,7 +183,7 @@ h2 {
 }
 .card {
     width: 100%;
-    height: auto;
+    height: 400px;
     border-radius: 1rem;
     margin: 0 0 2rem 0;
     padding: 10px;
@@ -191,7 +191,7 @@ h2 {
 
     &__image {
         width: 100%;
-        height: auto;
+        height: 180px;
         margin-bottom: 0.6rem;
     }
     &__title {
@@ -202,7 +202,10 @@ h2 {
     }
     &__btn {
         height: 50px;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
         & a {
             background-color: rgb(211, 70, 19);
             border: none;
@@ -216,7 +219,11 @@ h2 {
                 color: rgb(211, 70, 19);
                 border: 2px solid rgb(211, 70, 19);
             }
+            &:first-of-type {
+                margin-right: 10px;
+            }
         }
+        
         
     }
 }

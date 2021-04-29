@@ -224,7 +224,7 @@ h2 {
 
 .card {
   width: 100%;
-  height: auto;
+  height: 400px;
   border-radius: 1rem;
   margin: 0 0 2rem 0;
   padding: 10px;
@@ -234,7 +234,7 @@ h2 {
 
 .card__image {
   width: 100%;
-  height: auto;
+  height: 180px;
   margin-bottom: 0.6rem;
 }
 
@@ -248,7 +248,15 @@ h2 {
 
 .card__btn {
   height: 50px;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card__btn a {
@@ -266,6 +274,10 @@ h2 {
   background-color: white;
   color: #d34613;
   border: 2px solid #d34613;
+}
+
+.card__btn a:first-of-type {
+  margin-right: 10px;
 }
 
 /*Contact me*/
