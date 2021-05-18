@@ -1,3 +1,6 @@
+:root {
+    --primary-color:rgb(211, 70, 19);
+}
 * {
     margin: 0;
     padding: 0;
@@ -12,11 +15,11 @@ main {
 }
 h2 {
     text-align: center;
-    color: rgb(211, 70, 19);
+    color: var(--primary-color);
 }
 /*Navigation*/
 .nav {
-    background-color: rgb(211, 70, 19);
+    background-color: var(--primary-color);
     height: 4rem;
     width: 100%;
    
@@ -32,15 +35,14 @@ h2 {
     
     &__list {
        list-style: none;
-       background-color: rgb(211, 70, 19);
+       background-color: var(--primary-color);
        font-weight: 700;
        width: 100%;
        height: 100vh;
        display: none;
        flex-direction: column;
        justify-content: center;
-       align-items: center;
-       
+       align-items: center;      
        position: absolute;
     
     }
@@ -77,8 +79,8 @@ h2 {
        align-items: center;
     }
     &__img {
-        background: rgb(211, 70, 19);
-        border: 6px solid rgb(211, 70, 19);
+        background: var(--primary-color);
+        border: 6px solid var(--primary-color);
         width: fit-content;
         height: auto;
         border-radius: 50%;
@@ -92,23 +94,18 @@ h2 {
     }
     &__name {
         margin-bottom: 0.5rem;
-        color: rgb(211, 70, 19);
+        color: var(--primary-color);
     }
     &__profession {
         margin-bottom: 2rem;
     }
-    
-
 }
 .social {
     display: flex;
     list-style: none;
     justify-content: center;
-    
-
     & li {
         margin-right: 0.5rem;
-        
     }
 
     & li a {
@@ -116,24 +113,23 @@ h2 {
         height: 60px;
         padding: 12px;
         border-radius: 50%;
-        background-color: rgb(211, 70, 19);
+        background-color: var(--primary-color);
         font-size: 16px;
         color: white;
         transition: all 0.3s ease;
        &:hover {
            background-color: white;
-           color: rgb(211, 70, 19);
-           border: 1px solid rgb(211, 70, 19);
+           color: var(-primary--color);
+           border: 1px solid var(--primary-color);
        }
     }
 }
 /*About Me*/
 .about {
     margin-bottom: 2rem;
-    background-color: rgb(211, 70, 19);
+    background-color: var(--primary-color);
     color: white;
     padding: 1rem;
-    
 
     &__title {
         text-align: center;
@@ -151,16 +147,13 @@ h2 {
         margin-top: 2rem;
         & h3 {
             color: white;
-            margin-bottom: 1rem;
-            
+            margin-bottom: 1rem;           
         }
     }
     &__list {
         list-style: none;
         display: flex;
         flex-wrap: wrap;
-        
-
     }
     &__item {
         margin-left: 1.2rem;
@@ -184,7 +177,7 @@ h2 {
 .card {
     width: 100%;
     height: 400px;
-    border-radius: 1rem;
+    border-radius: 10px;
     margin: 0 0 2rem 0;
     padding: 10px;
     box-shadow: -10px 10px 20px rgba(0,0,0,0.3);
@@ -207,7 +200,7 @@ h2 {
         align-items: center;
         
         & a {
-            background-color: rgb(211, 70, 19);
+            background-color: var(--primary-color);
             border: none;
             border-radius: 18px;
             padding: 10px 20px;
@@ -216,39 +209,49 @@ h2 {
             transition: all 0.3s ease;
             &:hover {
                 background-color: white;
-                color: rgb(211, 70, 19);
-                border: 2px solid rgb(211, 70, 19);
+                color: var(--primary-color);
+                border: 2px solid var(--primary-color);
             }
             &:first-of-type {
                 margin-right: 10px;
             }
-        }
-        
+        }  
         
     }
 }
 /*Contact me*/
 .contactme {
-    margin-bottom: 2rem;
-    padding: 0 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .contact {
-  display: flex;
-  flex-direction: column;
-  margin-top: 1rem;
-
-  &__card {
-    width: 100%;
-    box-shadow: -10px 10px 20px rgba(0,0,0,0.3);
-    border-radius: 1rem;
-    padding: 10px 20px;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-  &__icon {
-      color: rgb(211, 70, 19);
-  }
+    width: 340px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    &__card {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        & i {
+            margin-right: 30px;
+            color: var(--primary-color);
+            font-size: 22px;
+        }
+    }
+    &__title {
+        margin-right: 10px;
+    }
+    &__detail {
+        font-size: 18px;
+    }
 }
+
 
 /*Footer*/
 footer {
@@ -257,9 +260,31 @@ footer {
     margin-top: 1rem;
     padding: 10px 20px;
     text-align: center; 
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
 }
-.footer__desc {
-    margin-top: 1rem;
+.footer__title {
+    color: whitesmoke;
+}
+.footer__social {
+    width: 100%;
+}
+.footer__social a i{
+    margin-right: 20px;
+    font-size: 26px;
+    color: white;
+    transition: all 0.3s ease;
+    &:hover {
+        color: var(--primary-color);
+    }
+}
+.footer__social a i:nth-last-of-type(2) {
+    margin-right: 0;
 }
 
 @media only screen and (min-width:768px) {
@@ -269,7 +294,7 @@ footer {
     }
     
     .nav {
-       background-color: rgb(211, 70, 19);
+       background-color: var(--primary-color);
        width: 100%;
        height: 4rem;
        position: fixed;
@@ -307,12 +332,10 @@ footer {
             margin: 0;
             display: flex;
             justify-content: flex-end;
-            
         }
         &__desc {
             text-align: left;
             margin-left: 2rem;
-           
         }
         &__name {
             font-size: 2rem;
@@ -328,15 +351,13 @@ footer {
         padding: 3rem;
         &__container {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-          
+            grid-template-columns: 1fr 1fr; 
         }
         &__desc {
             text-align: left;
         }
         &__skills {
-            margin: 0;
-            
+            margin: 0;    
         }
         
     }
@@ -348,24 +369,18 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-gap: 2rem;
-        
+        grid-gap: 2rem;  
     }
     .card {
        width: 100%;
        margin: 0;
-
     }
     /*Contact me*/
-    .contactme {
-        
-        min-height: 25vh;
-        padding: 3rem 3rem 0 3rem;
-    }
     .contact {
-        display: flex;
-        flex-direction: row;
-        margin-top: 3rem;
+        width: 500px;
+        &__title {
+            margin-right: 80px;
+        }
     }
 }
 
