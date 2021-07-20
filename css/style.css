@@ -69,10 +69,14 @@ h2 {
 .nav__link {
   color: white;
   text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .nav__link:hover {
   color: black;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .active {
@@ -157,7 +161,7 @@ h2 {
 
 .social li a:hover {
   background-color: white;
-  color: var(-primary--color);
+  color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
 

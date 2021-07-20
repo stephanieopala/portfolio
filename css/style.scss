@@ -52,9 +52,11 @@ h2 {
     &__link {
         color: white;
         text-decoration: none;
+        transition: all 0.3s ease;
 
         &:hover {
             color: black;
+            transition: all 0.3s ease;
         }
     }
 }
@@ -115,11 +117,12 @@ h2 {
         transition: all 0.3s ease;
        &:hover {
            background-color: white;
-           color: var(-primary--color);
+           color: var(--primary-color);
            border: 1px solid var(--primary-color);
        }
     }
 }
+
 /*About Me*/
 .about {
     margin-bottom: 2rem;
