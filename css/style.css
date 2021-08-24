@@ -59,6 +59,8 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
 }
 
 .nav__item {
@@ -148,7 +150,7 @@ h2 {
 }
 
 .social li a {
-  width: 60px;
+  width: 80px;
   height: 60px;
   padding: 12px;
   border-radius: 50%;
@@ -236,8 +238,9 @@ h2 {
   border-radius: 10px;
   margin: 0 0 2rem 0;
   padding: 10px;
-  -webkit-box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3);
-          box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  text-align: center;
 }
 
 .card__image {
